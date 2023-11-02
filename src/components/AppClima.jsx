@@ -10,11 +10,11 @@ export default function AppClima() {
   const { spinner, mostrarClima} = useClima();
 
   return (
-    <main className='container px-4 mx-auto'>
+    <main className='container:lg mx-auto px-4 bg-gradient-to-r from-sky-500 to-indigo-500 min-h-screen grid place-items-center'>
       <Header />
       <Formulario />
 
-      <div className='relative'>
+      <div className='relative w-full md:w-1/2 lg:w-1/3 mx-auto bg-transparent mt-5'>
         {spinner ? (
           <Spinner />
         ): mostrarClima ?(

@@ -17,7 +17,7 @@ export default function Resumen() {
     const salidaSol = data.sys.sunrise;
 
   return (
-    <div className='md:w-1/2 lg:w-1/3 mx-auto bg-blue-400 p-4 rounded-lg mt-5'>
+    <div className='p-4 bg-gradient-to-b from-sky-400 to-indigo-400 rounded-lg shadow-md'>
       <h3 className='text-center text-5xl text-white font-black'>{convertirTemperatura(tempActual)}&deg;C</h3>
       <div className='flex justify-between items-center'>
         <div>

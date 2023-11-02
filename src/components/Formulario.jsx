@@ -9,13 +9,13 @@ export default function Formulario() {
     const [pais, setPais] = useState();
 
   return (
-    <div className='md:w-1/2 lg:w-1/3 mx-auto bg-blue-400 p-4 rounded-lg mt-5'>
+    <div className='w-full md:w-1/2 lg:w-1/3 mx-auto bg-gradient-to-b from-sky-400 to-indigo-400 p-4 rounded-lg mt-5 shadow-md'>
         <div className='mb-3'>
-            <label htmlFor="ciudad" className='mb-5 text-xl text-yellow-200 font-bold'>Ciudad:</label>
+            <label htmlFor="ciudad" className='mb-5 text-xl text-amber-200 font-bold'>Ciudad:</label>
             <input onChange={(e)=> {setCiudad(e.target.value)}} type="text" id='ciudad' name='ciudad' className='w-full border border-gray-400 p-2 rounded-md' placeholder='Ingresa alguna ciudad, ej. Monterrey'/>    
         </div>   
         <div className='mb-3'>
-            <label htmlFor="pais" className='mb-5 text-xl text-yellow-200 font-bold'>Pais:</label>
+            <label htmlFor="pais" className='mb-5 text-xl text-amber-200 font-bold'>Pais:</label>
             <select onChange={(e)=> {setPais(e.target.value)}} name="pais" id="pais" className='w-full border border-gray-400 p-2 rounded-md bg-gray-100'>
                 <option value="">-- Selecciona algún pais --</option>
                 {paises.map((pais, index) => (
