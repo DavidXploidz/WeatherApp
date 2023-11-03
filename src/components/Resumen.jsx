@@ -43,8 +43,8 @@ export default function Resumen() {
         </div>
       </div>
       <div className='flex items-center justify-between'>
-        <p className='text-sm text-white flex items-center'><i class='bx bx-sun text-2xl'></i><span className='ml-1'>{obtenerSol(salidaSol)}</span></p>
-        <p className='text-sm text-white flex items-center'><i class='bx bx-moon text-2xl' ></i><span className='ml-1'>{obtenerSol(puestaSol)}</span></p>
+        <p className='text-sm text-white flex items-center'><i className='bx bx-sun text-2xl'></i><span className='ml-1'>{obtenerSol(salidaSol)}</span></p>
+        <p className='text-sm text-white flex items-center'><i className='bx bx-moon text-2xl' ></i><span className='ml-1'>{obtenerSol(puestaSol)}</span></p>
       </div>
     </div>
   )
